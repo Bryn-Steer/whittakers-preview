@@ -12860,4 +12860,31 @@ table.woocommerce-product-attributes {
     top: 10px;
     left: 15px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/* Mobile hero adjustments */
+@media (max-width: 767px) {
+.banner-wrapper.style3 .banner-style3 .title {
+font-size: 46px !important;
+line-height: 1 !important;
+letter-spacing: 0 !important;
+white-space: nowrap !important;
+width: 100% !important;
+max-width: 100% !important;
+overflow: visible !important;
+}
+.banner-wrapper.style3 .banner-style3 .title span {
+    display: inline-block !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    white-space: nowrap !important;
+}
+
+.banner-wrapper.style3 .shape3 {
+    display: none !important;
+}
+}
+@media (max-width: 430px) {
+.banner-wrapper.style3 .banner-style3 .title {
+font-size: 38px !important;
+}
+}
