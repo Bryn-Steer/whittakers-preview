@@ -37,10 +37,10 @@
     content="Freshly cooked fish and chips, homemade gluten-free pies, generous portions and traditional chip shop favourites in Urmston. Dine in or takeaway.">
 <meta property="og:url" content="https://whittakersfishandchips.com/">
 <meta property="og:image"
-    content="https://whittakersfishandchips.com/assets/img/whittakers-social-share.jpg">
+    content="https://whittakersfishandchips.com/assets/img/logo/logo3.svg">
 <meta property="og:image:secure_url"
-    content="https://whittakersfishandchips.com/assets/img/whittakers-social-share.jpg">
-<meta property="og:image:type" content="image/jpeg">
+    content="https://whittakersfishandchips.com/assets/img/logo/logo3.svg">
+<meta property="og:image:type" content="image/svg+xml">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt"
@@ -323,78 +323,151 @@
 
 <div class="offcanvas__overlay"></div>
 
-    <!-- Header Section Start -->
+<!-- Header Section Start -->
 <header class="header-section-3">
+
     <div class="container-fluid">
+
         <div class="main-header-wrapper">
+
             <div class="main-header-items">
+
                 <div id="header-sticky" class="header-3">
+
                     <div class="mega-menu-wrapper">
+
                         <div class="header-main">
+
+                            <!-- Header Left -->
                             <div class="header-left">
+
+                                <!-- Desktop Sidebar Button -->
                                 <div class="header__hamburger d-none d-xl-block my-auto">
                                     <div class="sidebar__toggle">
                                         <i class="fas fa-bars"></i>
                                     </div>
                                 </div>
+
+                                <!-- Mobile and Tablet Logo -->
                                 <div class="logo-img d-block d-xl-none">
+
                                     <a href="index.html">
-                                        <img src="assets/img/logo/logo.svg" alt="Whittaker's Fish & Chip Shop">
+
+                                        <img
+                                            class="js-header-logo"
+                                            src="assets/img/logo/logowhite.svg"
+                                            data-white-logo="assets/img/logo/logowhite.svg"
+                                            data-dark-logo="assets/img/logo/logo.svg"
+                                            alt="Whittaker's Fish &amp; Chip Shop">
+
                                     </a>
+
                                 </div>
+
                             </div>
+
+                            <!-- Header Centre -->
                             <div class="header-middle">
+
                                 <div class="mean__menu-wrapper">
+
                                     <div class="main-menu">
+
                                         <nav id="mobile-menu">
+
                                             <ul>
+
                                                 <li class="active">
                                                     <a href="index.html">Home</a>
                                                 </li>
+
                                                 <li>
                                                     <a href="about-2.html">About Us</a>
                                                 </li>
+
                                                 <li>
                                                     <a href="menu2.html">Menu</a>
                                                 </li>
+
+                                                <!-- Desktop Logo -->
                                                 <li>
+
                                                     <div class="logo-image d-none d-xl-block">
+
                                                         <a href="index.html">
-                                                            <img src="assets/img/logo/logo.svg" alt="Whittaker's Fish & Chip Shop">
+
+                                                            <img
+                                                                class="js-header-logo"
+                                                                src="assets/img/logo/logowhite.svg"
+                                                                data-white-logo="assets/img/logo/logowhite.svg"
+                                                                data-dark-logo="assets/img/logo/logo.svg"
+                                                                alt="Whittaker's Fish &amp; Chip Shop">
+
                                                         </a>
+
                                                     </div>
+
                                                 </li>
+
                                                 <li>
                                                     <a href="gallery.html">Gallery</a>
                                                 </li>
+
                                                 <li>
                                                     <a href="testimonials.html">Reviews</a>
                                                 </li>
+
                                                 <li>
                                                     <a href="contact.html">Contact</a>
                                                 </li>
+
                                             </ul>
+
                                         </nav>
+
                                     </div>
+
                                 </div>
+
                             </div>
+
+                            <!-- Header Right -->
                             <div class="header-right d-flex justify-content-end align-items-center">
-                                <a class="theme-btn style4 pe-2 ps-0 rounded-5" href="menu2.html" aria-label="View Menu">
+
+                                <a
+                                    class="theme-btn style4 pe-2 ps-0 rounded-5"
+                                    href="menu2.html"
+                                    aria-label="View Menu">
+
                                     <i class="fa-sharp fa-regular fa-arrow-right"></i>
+
                                 </a>
+
+                                <!-- Mobile Sidebar Button -->
                                 <div class="header__hamburger d-xl-none my-auto">
+
                                     <div class="sidebar__toggle">
                                         <i class="fas fa-bars"></i>
                                     </div>
+
                                 </div>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </header>
+<!-- Header Section End -->
 
     <!-- Search Area Start -->
     <div class="search-wrap">
@@ -3900,21 +3973,7 @@
                     <a href="https://xorify.com">Xorify Studios</a>.
                 </p>
 
-                <ul class="brand-logo">
-
-                    <li>
-                        <a class="text-white" href="terms.html">
-                            Terms & Conditions
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="text-white" href="privacy.html">
-                            Privacy Policy
-                        </a>
-                    </li>
-
-                </ul>
+                <!--- --->
 
             </div>
 
@@ -3951,6 +4010,46 @@
     <script src="assets/js/nice-select.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const header = document.getElementById("header-sticky");
+        const headerLogos = document.querySelectorAll(".js-header-logo");
+
+        if (!header || headerLogos.length === 0) {
+            return;
+        }
+
+        function updateHeaderLogo() {
+
+            const headerIsWhite =
+                window.scrollY > 50 ||
+                header.classList.contains("sticky");
+
+            headerLogos.forEach(function (logo) {
+
+                const whiteLogo = logo.getAttribute("data-white-logo");
+                const darkLogo = logo.getAttribute("data-dark-logo");
+                const requiredLogo = headerIsWhite ? darkLogo : whiteLogo;
+
+                if (logo.getAttribute("src") !== requiredLogo) {
+                    logo.setAttribute("src", requiredLogo);
+                }
+
+            });
+
+        }
+
+        updateHeaderLogo();
+
+        window.addEventListener("scroll", updateHeaderLogo, {
+            passive: true
+        });
+
+    });
+</script>
+
 </body>
+
 
 </html>
