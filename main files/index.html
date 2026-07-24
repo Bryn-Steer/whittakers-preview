@@ -603,7 +603,7 @@
                         <!-- Hollands Pie Special -->
                         <div class="dishes-card style5 wow fadeInUp" data-wow-delay="0.6s">
                             <div class="dishes-thumb">
-                                <img src="assets/img/dishes/dishes6_2.svg" alt="Hollands Pie Special">
+                                <img src="assets/img/dishes/dishes6_4.svg" alt="Hollands Pie Special">
                             </div>
 
                             <div class="dishes-content">
@@ -657,7 +657,7 @@
                         <!-- Gluten Free Homemade Pie -->
                         <div class="dishes-card style5 wow fadeInUp" data-wow-delay="0.9s">
                             <div class="dishes-thumb">
-                                <img src="assets/img/dishes/dishes6_4.svg" alt="Gluten Free Homemade Pie">
+                                <img src="assets/img/dishes/dishes6_2.svg" alt="Gluten Free Homemade Pie">
                             </div>
 
                             <div class="dishes-content">
@@ -1038,6 +1038,172 @@
         font-weight: 600;
     }
 
+    /* =========================================================
+   CAFÉ MENU ADDITIONS
+========================================================= */
+
+.whittakers-menu-section .cafe-dietary-panel {
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+.whittakers-menu-section .menu-subsection-heading {
+    max-width: 850px;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+.whittakers-menu-section .menu-subsection-spacing {
+    margin-top: 52px;
+}
+
+.whittakers-menu-section .menu-subsection-kicker {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #a71930;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.whittakers-menu-section .menu-subsection-heading h4 {
+    margin: 0 0 10px;
+    color: #1c3358;
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+.whittakers-menu-section .menu-subsection-heading p {
+    margin: 0;
+    color: #666666;
+    line-height: 1.7;
+}
+
+.whittakers-menu-section .cafe-set-meal-notice {
+    margin-bottom: 16px;
+    padding: 20px;
+    border: 1px solid #dedede;
+    border-radius: 15px;
+    background: #f6f6f6;
+}
+
+.whittakers-menu-section .cafe-set-meal-notice strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #1c3358;
+    font-size: 15px;
+}
+
+.whittakers-menu-section .cafe-set-meal-notice p {
+    margin: 0;
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.whittakers-menu-section .children-menu-card {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 26px;
+    border: 1px solid #e3e3e3;
+    border-left: 4px solid #a71930;
+    border-radius: 18px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(167, 25, 48, 0.05),
+            #ffffff 45%
+        );
+}
+
+.whittakers-menu-section .children-menu-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 22px;
+}
+
+.whittakers-menu-section .children-menu-header h3 {
+    margin: 0;
+    color: #1c3358;
+    font-size: 23px;
+}
+
+.whittakers-menu-section .children-menu-header p {
+    margin: 6px 0 0;
+    color: #666666;
+}
+
+.whittakers-menu-section .children-choice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.whittakers-menu-section .children-choice-item {
+    padding: 14px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #1c3358;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.whittakers-menu-section .children-menu-footer {
+    margin: 18px 0 0;
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.whittakers-menu-section .cafe-allergy-notice {
+    margin-top: 50px;
+}
+
+@media (max-width: 767.98px) {
+    .whittakers-menu-section .children-choice-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .whittakers-menu-section .menu-subsection-heading h4 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .whittakers-menu-section .menu-subsection-spacing {
+        margin-top: 40px;
+    }
+
+    .whittakers-menu-section .children-menu-card {
+        padding: 19px 15px;
+    }
+
+    .whittakers-menu-section .children-menu-header {
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+    }
+
+    .whittakers-menu-section .children-menu-header h3 {
+        font-size: 19px;
+    }
+
+    .whittakers-menu-section .children-choice-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .whittakers-menu-section .children-choice-item {
+        padding: 11px 8px;
+        font-size: 12px;
+    }
+}
+
     /* Multiple prices */
 
     .whittakers-menu-section .menu-price-list {
@@ -1302,6 +1468,21 @@
                                 aria-selected="true"
                             >
                                 Gluten Free &amp; Wheat Free
+                            </button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                id="cafe-menu-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#cafe-menu"
+                                type="button"
+                                role="tab"
+                                aria-controls="cafe-menu"
+                                aria-selected="false"
+                            >
+                                Café Menu
                             </button>
                         </li>
 
@@ -2769,6 +2950,855 @@
                                 </div>
 
                             </div>
+                        </div>
+                        <!-- ==================================================
+                            CAFÉ MENU
+                        =================================================== -->
+                        <div
+                            class="tab-pane fade"
+                            id="cafe-menu"
+                            role="tabpanel"
+                            aria-labelledby="cafe-menu-tab"
+                            tabindex="0"
+                        >
+                            <div class="menu-category-heading">
+                                <h3>Whittaker's Café Menu</h3>
+
+                                <p>
+                                    Sit down and enjoy a freshly cooked traditional meal in our café.
+                                    Many of our most popular dinners are also available gluten free.
+                                    Please tell a member of staff about any allergies or dietary
+                                    requirements before ordering.
+                                </p>
+                            </div>
+
+                            <!-- Café gluten-free USP -->
+                            <div class="dietary-usp-panel cafe-dietary-panel">
+                                <div>
+                                    <h3>Gluten-Free Café Meals Available</h3>
+
+                                    <p>
+                                        Look for the <strong>GF Available</strong> label throughout the
+                                        café menu. Gluten-free bread, batter or alternative ingredients
+                                        may carry an additional charge on selected meals. Please ask our
+                                        team to confirm current gluten-free and wheat-free suitability.
+                                    </p>
+                                </div>
+
+                                <div class="dietary-usp-icon" aria-hidden="true">
+                                    GF<br>MENU
+                                </div>
+                            </div>
+
+                            <!-- ==================================================
+                                COMPLETE CAFÉ DINNERS
+                            =================================================== -->
+                            <div class="menu-subsection-heading">
+                                <span class="menu-subsection-kicker">
+                                    Complete meals
+                                </span>
+
+                                <h4>Traditional Café Dinners</h4>
+
+                                <p>
+                                    Our main café dinners include chips, sides, bread and butter,
+                                    and tea or coffee as described below.
+                                </p>
+                            </div>
+
+                            <div class="row gx-4">
+
+                                <!-- Left column -->
+                                <div class="col-lg-6">
+                                    <div class="menu-column">
+
+                                        <!-- Neptune Special -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Neptune Special</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+
+                                                    <span class="menu-badge menu-badge-popular">
+                                                        Large Meal
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Large cod fillet with chips, peas, two portions of
+                                                    bread and butter, tartare sauce and lemon. Served
+                                                    with a pot of tea or a cup of coffee with one free
+                                                    refill.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £13.75
+                                            </div>
+                                        </div>
+
+                                        <!-- Atlantis Special -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Atlantis Special</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Standard cod fillet with chips, peas, two portions
+                                                    of bread and butter, tartare sauce and lemon.
+                                                    Served with a pot of tea or a cup of coffee.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £12.25
+                                            </div>
+                                        </div>
+
+                                        <!-- Nemo Special -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Nemo Special</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Small cod fillet with chips, peas, one portion of
+                                                    bread and butter, tartare sauce and lemon.
+                                                    Served with a pot of tea or a cup of coffee.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £8.95
+                                            </div>
+                                        </div>
+
+                                        <!-- Scampi Dinner -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Scampi Dinner</h3>
+                                                </div>
+
+                                                <p>
+                                                    Ten pieces of scampi with chips, peas, two portions
+                                                    of bread and butter, tartare sauce and lemon.
+                                                    Served with tea or coffee.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £10.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Goujons Dinner -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Cod Goujons Dinner</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Battered cod goujons with chips, peas, two portions
+                                                    of bread and butter, tartare sauce and lemon.
+                                                    Served with tea or coffee.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £9.50
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Right column -->
+                                <div class="col-lg-6">
+                                    <div class="menu-column">
+
+                                        <!-- British Bull Dog -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>British Bull Dog</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Your choice of pie or pudding with chips, peas,
+                                                    gravy and two portions of bread and butter.
+                                                    Served with tea or coffee.
+                                                    Jackson's pudding costs an additional 50p.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £9.75
+                                                <small>Jackson's +50p</small>
+                                            </div>
+                                        </div>
+
+                                        <!-- Chicken Dinner -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Chicken Dinner</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Chicken breast with chips, peas, gravy and two
+                                                    portions of bread and butter. Served with tea
+                                                    or coffee.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £12.00
+                                            </div>
+                                        </div>
+
+                                        <!-- Sausage Dinner -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Sausage Dinner</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Sausage with chips, peas, gravy and two portions
+                                                    of bread and butter. Served with a pot of tea
+                                                    or a cup of coffee.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £9.25
+                                                <small>GF option +50p</small>
+                                            </div>
+                                        </div>
+
+                                        <!-- Chicken Nuggets Dinner -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Chicken Nuggets Dinner</h3>
+                                                </div>
+
+                                                <p>
+                                                    Ten chicken nuggets with chips, your choice of peas
+                                                    or beans, and two portions of bread and butter.
+                                                    Served with tea or coffee.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £9.25
+                                            </div>
+                                        </div>
+
+                                        <!-- Fixed meal notice -->
+                                        <div class="cafe-set-meal-notice">
+                                            <strong>Please note</strong>
+
+                                            <p>
+                                                These complete meals have been created as fixed,
+                                                value-for-money café offers. Alternatives or substitutions
+                                                may not be available.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- ==================================================
+                                CHILDREN'S MEALS
+                            =================================================== -->
+                            <div class="menu-subsection-heading menu-subsection-spacing">
+                                <span class="menu-subsection-kicker">
+                                    Under 12s only
+                                </span>
+
+                                <h4>Children's Meals</h4>
+
+                                <p>
+                                    Choose one main item. Each children's meal is served with chips,
+                                    your choice of beans or peas and gravy, and a small drink.
+                                </p>
+                            </div>
+
+                            <div class="children-menu-card dietary-highlight">
+
+                                <div class="children-menu-header">
+                                    <div>
+                                        <div class="menu-title-row">
+                                            <h3>Children's Meal</h3>
+
+                                            <span class="menu-badge menu-badge-gf">
+                                                GF Available
+                                            </span>
+                                        </div>
+
+                                        <p>
+                                            Suitable for children under 12 years old.
+                                        </p>
+                                    </div>
+
+                                    <div class="menu-price">
+                                        £4.95
+                                    </div>
+                                </div>
+
+                                <div class="children-choice-grid">
+
+                                    <div class="children-choice-item">
+                                        <span>Fish</span>
+                                    </div>
+
+                                    <div class="children-choice-item">
+                                        <span>Fish Goujons</span>
+                                    </div>
+
+                                    <div class="children-choice-item">
+                                        <span>Jumbo Sausage</span>
+                                    </div>
+
+                                    <div class="children-choice-item">
+                                        <span>Chicken Nuggets</span>
+                                    </div>
+
+                                    <div class="children-choice-item">
+                                        <span>Pizza</span>
+                                    </div>
+
+                                    <div class="children-choice-item">
+                                        <span>Fish Fingers</span>
+                                    </div>
+
+                                </div>
+
+                                <p class="children-menu-footer">
+                                    Gluten-free availability depends on the selected main item.
+                                    Please confirm your requirements when ordering.
+                                </p>
+
+                            </div>
+
+                            <!-- ==================================================
+                                INDIVIDUAL CAFÉ ITEMS
+                            =================================================== -->
+                            <div class="menu-subsection-heading menu-subsection-spacing">
+                                <span class="menu-subsection-kicker">
+                                    Build your own meal
+                                </span>
+
+                                <h4>Individual Café Items</h4>
+
+                                <p>
+                                    Order individual portions separately or add them to your meal.
+                                    Red or labelled prices indicate gluten-free availability.
+                                </p>
+                            </div>
+
+                            <div class="row gx-4">
+
+                                <!-- Left column -->
+                                <div class="col-lg-6">
+                                    <div class="menu-column">
+
+                                        <!-- Fish and chips -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Fish &amp; Chips</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Traditional battered fish served with chips.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £9.75
+                                            </div>
+                                        </div>
+
+                                        <!-- Chicken breast and chips -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Chicken Breast &amp; Chips</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Chicken breast served with freshly cooked chips.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £9.25
+                                            </div>
+                                        </div>
+
+                                        <!-- Pie or pudding -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Pie or Pudding</h3>
+                                                </div>
+
+                                                <p>
+                                                    Ask our team about the varieties currently available.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £2.95
+                                            </div>
+                                        </div>
+
+                                        <!-- Jumbo sausage -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Jumbo Sausage</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Traditional jumbo chip shop sausage.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price-list">
+                                                <span>Standard £2.00</span>
+                                                <span>Gluten Free £2.30</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Jacksons pudding -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Jackson's Pudding</h3>
+                                                </div>
+
+                                                <p>
+                                                    Traditional Jackson's steamed pudding.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £3.25
+                                            </div>
+                                        </div>
+
+                                        <!-- Chips -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Chips</h3>
+                                                </div>
+
+                                                <p>
+                                                    Freshly cooked traditional chip shop chips.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price-list">
+                                                <span>Small £2.60</span>
+                                                <span>Standard £3.00</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Sides -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Peas, Gravy, Curry or Beans</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Choose from mushy peas, gravy, curry sauce or beans.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £1.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Scollop -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Scollop</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        GF Available
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Traditional battered potato scollop.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £0.80
+                                            </div>
+                                        </div>
+
+                                        <!-- Fritters -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Pea or Spam Fritter</h3>
+                                                </div>
+
+                                                <p>
+                                                    Choose a traditional pea fritter or spam fritter.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £1.80
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Right column -->
+                                <div class="col-lg-6">
+                                    <div class="menu-column">
+
+                                        <!-- GF pies -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Gluten-Free Pies</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        Gluten Free
+                                                    </span>
+
+                                                    <span class="menu-badge menu-badge-homemade">
+                                                        Homemade
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Ask our team about the gluten-free pie fillings
+                                                    currently available.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £2.95
+                                            </div>
+                                        </div>
+
+                                        <!-- GF desserts -->
+                                        <div class="single-menu-items dietary-highlight">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Gluten-Free Desserts</h3>
+
+                                                    <span class="menu-badge menu-badge-gf">
+                                                        Gluten Free
+                                                    </span>
+                                                </div>
+
+                                                <p>
+                                                    Ask our team about today's gluten-free dessert
+                                                    selection.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                From £2.90
+                                            </div>
+                                        </div>
+
+                                        <!-- Fishcake -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Fishcake</h3>
+                                                </div>
+
+                                                <p>
+                                                    Traditional chip shop fishcake.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £2.95
+                                            </div>
+                                        </div>
+
+                                        <!-- Chip barm -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Chip Barm</h3>
+                                                </div>
+
+                                                <p>
+                                                    Freshly cooked chips served inside a soft barmcake.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £3.80
+                                            </div>
+                                        </div>
+
+                                        <!-- Beans on toast -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Beans on Toast</h3>
+                                                </div>
+
+                                                <p>
+                                                    Hot baked beans served on toast.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £2.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Toast -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Toast or Bread &amp; Butter</h3>
+                                                </div>
+
+                                                <p>
+                                                    A portion of toast or bread and butter.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £0.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Barmcake -->
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Barmcake</h3>
+                                                </div>
+
+                                                <p>
+                                                    A fresh, soft barmcake.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £0.95
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- ==================================================
+                                CAFÉ DRINKS
+                            =================================================== -->
+                            <div class="menu-subsection-heading menu-subsection-spacing">
+                                <span class="menu-subsection-kicker">
+                                    Hot and cold drinks
+                                </span>
+
+                                <h4>Café Drinks</h4>
+
+                                <p>
+                                    Complete your visit with tea, coffee, speciality drinks,
+                                    milkshakes or a refreshing cold drink.
+                                </p>
+                            </div>
+
+                            <div class="row gx-4">
+
+                                <div class="col-lg-6">
+                                    <div class="menu-column">
+
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Tea</h3>
+                                                </div>
+
+                                                <p>
+                                                    Freshly prepared traditional tea.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £1.70
+                                            </div>
+                                        </div>
+
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Coffee</h3>
+                                                </div>
+
+                                                <p>
+                                                    Freshly prepared coffee.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £1.80
+                                            </div>
+                                        </div>
+
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Canned Drink, Bottled Water or Milk</h3>
+                                                </div>
+
+                                                <p>
+                                                    Choose from selected cold drinks, water or milk.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £1.50
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="menu-column">
+
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Speciality Tea, Coffee or Hot Chocolate</h3>
+                                                </div>
+
+                                                <p>
+                                                    Ask our team about the speciality hot drinks
+                                                    currently available.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £2.00
+                                            </div>
+                                        </div>
+
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Milkshake</h3>
+                                                </div>
+
+                                                <p>
+                                                    Cream and sprinkles can be added for an
+                                                    additional 25p.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £2.75
+                                                <small>Cream and sprinkles +25p</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="single-menu-items">
+                                            <div class="menu-content">
+                                                <div class="menu-title-row">
+                                                    <h3>Bottled Drinks</h3>
+                                                </div>
+
+                                                <p>
+                                                    A selection of chilled bottled drinks.
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-price">
+                                                £1.95
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Café allergy notice -->
+                            <div class="allergy-notice cafe-allergy-notice">
+                                <p>
+                                    <strong>Café allergy information:</strong>
+                                    Items marked GF Available can be prepared using a gluten-free
+                                    alternative, subject to availability. Additional charges may apply.
+                                    Please tell a member of staff about allergies, coeliac requirements,
+                                    wheat intolerance or other dietary needs before placing your order.
+                                </p>
+                            </div>
+
                         </div>
 
                     </div>
